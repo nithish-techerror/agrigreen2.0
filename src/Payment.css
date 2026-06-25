@@ -1,0 +1,163 @@
+/* Payment.css – PhonePe UPI Flow */
+
+.payment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  background: var(--bg-color);
+  padding: 40px 20px;
+  margin-top: 80px;
+}
+
+.payment-card {
+  background: var(--surface-color);
+  padding: 36px;
+  width: 100%;
+  max-width: 360px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.payment-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+  background-color: var(--bg-color);
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 12px 0 20px;
+  color: var(--primary-color);
+}
+
+/* ── PhonePe UPI box ── */
+.upi-box {
+  background: #f3f8ff;
+  border: 1.5px solid #5f33e1;
+  border-radius: 14px;
+  padding: 22px 20px;
+  margin-top: 10px;
+}
+
+.phonepe-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #5f33e1;
+}
+
+.phonepe-logo {
+  width: 50px;
+  height: 20px;
+}
+
+/* QR code */
+.qr-wrap {
+  margin: 10px auto 16px;
+  display: inline-block;
+}
+
+.qr-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 2px solid #5f33e1;
+}
+
+.qr-hint {
+  font-size: 12px;
+  color: #888;
+  margin-top: 6px;
+}
+
+/* UPI ID row */
+.upi-id-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #ede7ff;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 14px 0;
+}
+
+.upi-id-text {
+  font-weight: 600;
+  color: #4a148c;
+  font-size: 15px;
+  word-break: break-all;
+}
+
+.copy-btn {
+  background: #5f33e1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.copy-btn:hover {
+  background: #4a148c;
+}
+
+/* Pay / Confirm buttons */
+.pay-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius-sm, 8px);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.phonepe-btn {
+  background: linear-gradient(135deg, #5f33e1, #7c4dff);
+  color: #fff;
+}
+
+.phonepe-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(95, 51, 225, 0.4);
+}
+
+.confirm-btn {
+  background: linear-gradient(135deg, #2e7d32, #4caf50);
+  color: #fff;
+}
+
+.confirm-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(76, 175, 80, 0.4);
+}
+
+.upi-note {
+  font-size: 11.5px;
+  color: #999;
+  margin-top: 12px;
+  line-height: 1.5;
+}
+.payment-success{
+  position: absolute;
+  top:30%;
+}
